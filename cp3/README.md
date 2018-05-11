@@ -256,3 +256,15 @@ ELF Header:
   Section header string table index: 14
 ```
 
+## Special Symbol
+
+```
+$ make ss
+gcc -m32 special_symbol.c -o special_symbol
+
+$ ./special_symbol
+Executable Start 5664C000
+Text End 5664C648 5664C648 5664C648
+Data End 5664E01C 5664E01C
+Executable End 5664E020 5664E020
+```
